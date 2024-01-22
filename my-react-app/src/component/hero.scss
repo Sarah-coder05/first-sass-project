@@ -1,0 +1,30 @@
+$primary-color: #57d7eb;
+$color: #828181;
+
+.hero{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.heroes{
+    display: flex;
+    margin: 50px;
+}
+.view{
+    padding-top: 25px;
+    width: 100px;
+    height: 100px;
+}
+.discount{
+    color: #2f5299;
+    font-size: 25px;
+    font-weight: 400;
+}
+.discount:hover{
+    color: $primary-color
+}
+.page{
+    line-height: 28px;
+    color: $color;
+    font-weight: 400
+}

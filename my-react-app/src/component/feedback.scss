@@ -1,0 +1,60 @@
+$background-image: url('../component/asset/background.jpg');
+$color: white;
+$font-family: 'Quotation Font', sans-serif; 
+.feedback {
+    background: $background-image;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    position: relative;
+    margin-top: 90px;
+}
+.overlay{
+    position: relative;
+    width: 600px;
+    bottom: 50px;
+
+    .bigger{
+        width: 500px;
+        height: 400px;
+        display: block;
+        padding-top: -30px;
+        
+    }
+    .smaller {
+        position: absolute;
+        top: 200px; 
+        left: 300px;  
+        height: auto;
+        display: block;
+        bottom: 0; 
+        right: 0; 
+        width: 50%; 
+    }
+}
+.feedback-page{
+    color: $color;
+    padding: 20px 40px 20px 40px;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.feedback-heading{
+    padding: 20px 50px 0px 60px;
+    line-height: 45px;
+    font-weight: 400;
+    font-size: 40px;
+}
+.quote-left{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.transit-containers{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    padding-top: 200px;
+    padding-left: 300px;
+}

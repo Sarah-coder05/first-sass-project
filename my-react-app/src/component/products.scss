@@ -1,0 +1,80 @@
+$color: #828181;
+$background-color: #007bff;
+.recent{
+    text-align: center;
+    line-height: 25px;
+    color: $color;
+    font-weight: 350;
+}
+.recents{
+    color: black;
+}
+.product-list{
+    display: flex;
+    justify-content: center;
+    .p-l{
+        a {
+            text-decoration: none;
+            color: $color;
+            gap: 55px; 
+            margin: 8px;
+            padding:10px;
+            border-radius: 5px;
+            font-size: 20px;
+            &:hover {
+              background-color: $background-color;
+              color: white;
+            }
+        }
+        .nutrition{
+            background-color: $background-color;
+            color: white;
+        }
+    }
+}
+.bonus{
+    display: flex;
+    justify-content: space-around;
+}
+.theme{
+    display: flex;
+    gap: 30px;
+    width:1110px;
+    height: 400px;
+    margin: 50px 0px 100px 50px
+}
+.vitamin{
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px $color;
+}
+.bottles{
+    padding: 0px 75px 0px 75px;
+}
+p{
+    padding: 0px 20px 0px 20px;
+    color: $color;
+    font-weight: 400;
+}
+h3{
+    padding-left: 20px;
+}
+.off{
+    color:#e10000;
+    font-weight: 700;
+}
+.dollars{
+    color: $background-color;
+    font-weight: 700;
+}
+.transit-container{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+.transit{
+    border-radius: 50%;
+    background-color: $background-color;
+    width:10px;
+    height:10px;
+    border: 1px solid $color;
+}

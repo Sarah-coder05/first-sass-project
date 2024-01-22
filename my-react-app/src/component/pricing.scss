@@ -1,0 +1,80 @@
+$background-image: url('../component/asset/gray bg.png');
+$primary-color: #0ad1f0;
+.pricing{
+    text-align: center;
+    line-height: 30px;
+}
+.planning{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background-image: $background-image;
+    background-size: 70% auto;
+    .tiny-image{
+        width: 150px;
+        height: 140px;
+        display: block;
+    }
+}
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 40px 20px;
+    transform: translate(-10%, -35%);
+    font-size: 45px; 
+    text-align: center;
+    color: white;
+}
+.top-planning{
+    margin-left: 35px;
+    display: flex;
+    padding-top: 10px;
+    width: 350px;
+}
+.pricing-planning{
+    display: flex;
+    gap: 20px;
+}
+.addition{
+    display: flex;
+    width: 1100px;
+}
+.pricing-note1{
+    line-height: 40px;
+    padding-left: 40px;
+}
+.pricing-note3{
+    padding-left: 150px;
+    line-height: 40px;
+}
+.pricing-note2{
+    padding-left: 130px;
+    line-height: 40px;
+}
+.tag{
+    padding-right: 50px;
+    padding-left: 30px;
+}
+.add {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.01s ease;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .add:hover {
+    animation: rotateAnimation 0.1s ease 2;
+  }
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

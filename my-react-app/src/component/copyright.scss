@@ -1,0 +1,25 @@
+$background-color: #f4f9fb;
+$color: #828181;
+$font-color: #0083e1;
+.copyright{
+    background-color: $background-color;
+    color: $color;
+    display: flex;
+    gap: 150px;
+    padding-left: 50px;
+    font-size: 400;
+    padding-bottom: 70px;
+    
+    .list-item{
+        list-style: none;
+        line-height: 40px;
+        font-weight: 400;
+    }
+    .policy{
+        padding-left: 35px;
+        color: black;
+    }
+}
+li:hover{
+    color: $font-color
+}

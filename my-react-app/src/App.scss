@@ -1,0 +1,110 @@
+$font-color:  #fff;
+$primary-color: #57d7eb;
+$purchase: #404040;
+$hover: #21da14;
+$font-family: quicksand,sans-serif;
+$background-image: url('../src/component/asset/bg.jpg'); 
+
+.container {
+  background: $background-image;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  color: $font-color
+}
+.header{
+  display: flex;
+  padding-top: 110px;
+  padding-bottom: 135px;
+  padding-left: 70px;
+  padding-right: 65px;
+}
+.purchase{
+  text-decoration: none;
+  background-color: $font-color;
+  color: $purchase;
+  padding: 10px 30px 10px 30px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.purchase:hover{
+  background-color: $primary-color;
+}
+.powerful{
+  font-size: 50px;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-top: 120px;
+  margin-bottom: 15px
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  padding-right: 30px;
+  font-weight: 300;
+  gap: 50px;
+
+  .logo {
+    img {
+      max-height: 40px;
+      margin-right: 20px;
+      padding-top: 40px;
+      padding-left: 70px;
+      padding-right: 200px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+
+    li {
+      
+      .order{
+        background-color: $primary-color;
+      }
+      .order:hover{
+        background-color: rgb(37, 37, 174);
+        color: $font-color
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        padding-right: 30px;
+        &:hover {
+          color: darken($hover, 10%);
+        }
+      }
+      &.home:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        border-radius: 5px;
+        white-space: nowrap;
+        min-width: 200px;
+        margin-top: 10px;
+        background-color: rgb(70, 129, 180);
+        .dotted{
+          border-style: dashed;
+          
+        }
+        a {
+          color: white;
+          padding-left: 20px;
+          display: block;
+        }
+        a:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
